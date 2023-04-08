@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --body-color: #FAD038;
+    --laranja: #FF740A;
+    --laranja-claro: #FF9F30;
+    --branco: #FAFAFA;
+    --indigo: #005377;
+    --azul-escuro: #052F5F;
+    --fonte-color: #191919;
+
+
+    --fonte-body: 'Poppins'
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+html {
+    font-family: var(--fonte-body);
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--body-color);
+}
+
+.nav {
+    background-color: var(--body-color);
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.nav_img {
+    text-align: center;
+    width: 160px;
+}
+
+.container {
+    text-align: center;
+}
+
+.h3_text {
+    margin-top: 2rem;
+    color: var(--fonte-color);
+}
+
+.main_input {
+    padding: 1rem;
+    border-radius: 0.75rem;
+    border-style: none;
+    width: 350px;
+    margin-right: 0.75rem;
+    font-size: 18px;
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+.main_input:focus {
+    outline: 0;
+}
+
+.btn-hover {
+    width: 200px;
+    padding: 1rem 2rem;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover.color {
+    background-image: linear-gradient(to right, var(--azul-escuro), var(--indigo), var(--laranja-claro), var(--laranja));
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    margin: 2rem auto;
+    align-content: center;
+    text-align: center;
+    display: flex;
+    
+}
+
+#personagem_card {
+    width: auto;
+    margin: 2rem 2rem 2rem 12rem;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+#personagem {
+    background-color: #FAFAFA;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+#imagemPersonagem {
+    border-radius: 1rem;
+}
+
+#quote_card {
+    width: 82vh;
+    margin: 5rem 2rem;
+    text-align: left;
+}
+
+.texto_quote {
+    font-size: 20px;
+}
